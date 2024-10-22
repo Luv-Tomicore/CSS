@@ -1,10 +1,49 @@
-body
-{
-   background-color: rgb(255, 197, 127);
+/* Set the opacity for the element with ID 'opa' */
+#opa {
+  opacity: 0.5; /* Makes the element semi-transparent */
 }
-h2{
-   font-family: cursive;
-   text-shadow:  5px 5px  #ea4108;
-   color: #ec914f;
-   font-size: 40px
+
+/* Styles for the body of the page */
+body {
+  background-image: url("images/bland.gif"); /* Sets a background image */
+}
+
+/* Styles for the h2 headings */
+h2 {
+  font-family: cursive; /* Sets the font family to cursive */
+  text-shadow: 5px 5px #ea4108; /* Adds a shadow effect to the text */
+  color: #ec914f; /* Sets the text color */
+  font-size: 20px; /* Sets the font size */
+}
+
+/* Styles for the navigation bar */
+.navbar {
+  display: flex; /* Uses flexbox for layout */
+  gap: 20px; /* Adds space between the navigation items */
+  padding: 20px; /* Adds padding around the navbar */
+}
+
+/* Styles for individual navigation links */
+.navbar a {
+  background-color: #e57849; /* Sets the background color of the links */
+  color: white; /* Sets the text color to white */
+  padding: 20px; /* Adds padding inside the links */
+  border: dotted #ec914f; /* Adds a dotted border with a specified color */
+  font-family: cursive; /* Sets the font family to cursive */
+  font-size: 30px; /* Sets the font size for the links */
+  text-decoration: solid; /* Sets the text decoration */
+  text-align: center; /* Centers the text inside the links */
+  width: 100px; /* Sets a fixed width for the links */
+  height: 100px; /* Sets a fixed height for the links */
+  display: flex; /* Uses flexbox for layout within the link */
+  align-items: center; /* Vertically centers the text inside the link */
+  border-radius: 60%; /* Makes the links circular, like bubbles */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Styles for the hover state of the links */
+.navbar a:hover {
+  background-color: #ff9933; /* Changes background color on hover */
+  transform: scale(1.1); /* Slightly enlarges the bubble on hover */
 }
