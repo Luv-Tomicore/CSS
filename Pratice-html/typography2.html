@@ -1,0 +1,79 @@
+<html lang="en-us"></html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+<title>Css Internal pratice</title>
+<!--Style tag inside the head tag-->
+<style>
+    /*All css propeties are enclosed in curly brackets*/
+    /*all propeties go on new lines */
+    /* when you are in the style tag you havrto comment with the */
+body{
+    background-color: rgb(196, 222, 245);
+    }
+    h1{
+        font-size:30px ;
+        font-family: cursive;
+        color: lightslategray;
+    }
+    #styled-by-id
+    {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    text-transform: lowercase;
+    
+    }
+    #styles-by-id
+    {
+        font-family: cursive;
+        font-style: italic;
+        color: rgb(163, 210, 210);
+    }
+    ul{
+    list-style:none;
+    }
+    li{
+        margin:10px;
+        font-size:20px;
+    }
+    .nav-link{
+        padding:5px;
+        margin:4px;
+        border:2px solid black;
+    background-color:#191970;
+    color:#f5f5ff;
+    display:inline;
+        
+    }
+    .img{
+        border:2px solid black;
+        text-align: center;
+    }
+</style> 
+</head>
+<body>
+    
+    <header>
+        <div style="background-color:ghostwhite;height: 120px;width: auto;">
+    <h1>This is internal css pratice</h1>
+    <h1 id="styles-by-id">I have another class and this is the style i used for it.</h1>
+        </div>
+    <nav>
+        <ul>
+    <li class = "nav-link"> <a href="inline-css.html">Inline css pratice</a></li>
+        <li class="nav-link"><a href="internal-css.html">Internal css html</a></li>
+        <li class="nav-link"><a href="css-external.html">Css-external.html</a></li>
+        <li class="nav-link"><a href="biography.html">Biography html</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <p id=#styled-by-id>This paragraph will show the effect of giving an element and ID and styling that ID.</p>
+        <img style="border:12px double rgb(233, 162, 69); " src="Images/bingo.png" width="350" height="300"alt="Picture of the character bingo" title="Picture of the character bingo"/> &nbsp;&nbsp;
+        <img style="border:10px dotted rgb(101, 155, 182) ;" src="Images/bluey.png" width="350" height="300"alt="picture of the character bluey" title="picture of the chracter bluey"/> &nbsp;&nbsp;
+        <img style="border:5px dotted rgb(233, 18, 18)  ;" src="Images/fancy.jpeg" width="350" height="300"alt="picture of the character fancy nancy" title="picture of the character fancy nancy"/>
+    </main>
+
+
+</body>
+</html>

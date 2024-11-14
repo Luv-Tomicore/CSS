@@ -18,34 +18,70 @@ Monday, October 21 2024 -->
       /* Styling for the body */
       body {
         background-image: none;
-        background-color: rgb(255, 170, 101); /* Background color */
+        background-color:#FFCC80; /* Background color */
+        margin-bottom: 130px;
       }
+      h1{
+        color:#ff8d4d;
+        font-size:60px;
 
+      }
       /* Positioning and styling for the first image */
       #info {
-        position: absolute;
-        top: 50px;
-        left: 140px;
-        border: 5px;
-        color: rgb(230, 156, 77);
+        color:#333333;
+        font-size:20px ;
+        font-family:
+        text-align: left;
+      
       }
 
       /* Positioning and styling for the second image */
       #treat {
-        position: absolute;
-        top: 50px;
-        right: 20px;
-        border: 5px;
+        color:#333333
+        font-size:20px ;
+        font-family:cursive;
+        text-align: center;
+        
       }
-
-      /* Navbar positioning and styling */
+      
+       /*style for the source */
+      #source
+      {
+        position: absolute;
+        bottom: auto;
+                right: 30px;
+                font-size: x-small;
+      }
+       /*color for the first span*/
+      #spann
+      {
+        color: rgb(14, 121, 121);
+      }
+      /*style for the navigation links to the different pages */
       .navbar {
-        position: absolute;
-        top: 20px;
-        left: 10px;
-        width: 10;
-        height: 2;
+          position:absolute;
+         top:20px;
+         left:100px ;
       }
+      .container {
+    display: flex;        /* Enable flexbox layout */
+    height: auto;
+    margin-top:300px ;
+    width: auto;
+    flex-direction: row;
+
+}
+
+#box1 {
+
+  width: 50%;
+
+}
+#box2 {
+  width: 50%;
+  
+}
+
     </style>
   </head>
 
@@ -53,77 +89,64 @@ Monday, October 21 2024 -->
     <!-- Header tag to wrap the navigation bar -->
     <header>
       <!-- Semantic navigation tag for navigation links -->
-      <nav>
-        <div class="navbar">
-          <!-- Back link to the previous page -->
-          <a href="treaty.html">Back &lt;&lt;</a>
-        </div>
-      </nav>
+            <!-- Navigation bar -->
+            <nav>
+              <div class="navbar">
+                <a href="treaty.html">Home</a>
+                <a href="read.html">Read</a>
+                <a href="images.html">Images</a>
+                <a href="sign.html">Sign Up</a>
+              </div>
+            </nav>
     </header>
 
     <!-- Main section of the page containing primary content -->
     <main>
       <!-- First section: Information about treaties -->
-      <section>
-        <article>
-          <figure>
-            <!-- Image: Information about treaties -->
-            <img
-              id="info"
-              src="images/info.png"
-              width="430"
-              height="490"
-              title="Information about what treaties are"
-              alt="An image containing information explaining what treaties are" />
-            <!-- Caption positioned on top of the image -->
-            <figcaption
-              style="
-                position: absolute;
-                top: 10px;
-                left: 30px;
-                font-size: x-small;
-              ">
-              Explanation of what treaties are.All information is sourced from
-              The government of the
-              <span style="color: rgb(14, 121, 121)"
-                >Anishinaabe Nation in Teaty 2 Territory.</span
-              >
-            </figcaption>
-          </figure>
-        </article>
-      </section>
+      <div class="container">
+        <div id="box1">
+          <section>
+            <h1>What are treaties?</h1>
+      <p id="info">A treaty is a special agreement between groups of people or countries.</br> 
+        These agreements help them get along better by deciding who gets to use certain land or resources.</br>
+        Everyone has to follow the rules they agree on in the treaty.<br/>
+      It's like when you and your friends agree to play a game a certain way to keep it fun and fair for everyone!
+      </p>
+          </section>
+    </div>
 
       <!-- Second section: Information about Treaty Two -->
-      <section>
-        <article>
-          <figure>
-            <!-- Image: Information about Treaty Two -->
-            <img
-              id="treat"
-              src="images/treat.png"
-              width="620"
-              height="580"
-              title="Information about Treaty Two"
-              alt="An image containing detailed information about Treaty Two" />
-            <!-- Caption positioned on top of the image -->
-            <figcaption
-              style="
-                position: absolute;
-                top: 10px;
-                right: 20px;
-                font-size: x-small;
-              ">
-              Details about Treaty Two. All information is sourced from The
-              Government of the<span style="color: rgb(14, 121, 121)"
-                >Anishinaabe Nation in Teaty 2 Territory.</span
-              >
-            </figcaption>
-          </figure>
-        </article>
-      </section>
-    </main>
+      <div id="box2">
+        <section>
 
-    <!-- Footer section for potential future content -->
+        <p id="treat">
+          This treaty was signed on august 21, 1871. The agreement was made between the  Anishinaabe people and the queen’s assistants.
+          It was signed at the Manitoba house.
+          In this treaty, both the Queen's helpers and the Anishinaabe agreed on how they would share and use the land.</br> 
+        The land was in southwestern Manitoba and a little bit in southeastern Saskatchewan.
+        This treaty is so important because it helped the Anishinaabe people to keep their rights
+        and continue using their land as they were before the people from Europe came to their land.
+         It also made it possible for new settlers to move into the land peacefully.</br>
+
+      The treaty was made because the government wanted to allow settlers to 
+    move in but they also wanted them to make peace with the owners of the land.   
+      They agreed to share and respect each other’s space, like when friends
+        make a promise to share toys and play nicely together.</br>
+   Some things that were promised in the beginning weren’t written down, so a few years later,
+ they added more promises to make sure everything was fair for everyone involved.
+This treaty, like other treaties, helped people live together peacefully on the
+ same land by making sure everyone knew the rules and respected each other’s rights.
+ </p>
+ </section>
+</div>
+ </div>
+ <a id="source"href="https://treaty2.ca/treaty-2/#:~:text=The%20treaty
+    %20reaffirmed%20the%20inherent,small%20part%20of
+    %20southeastern%20Saskatchewan."target="_blank">   
+    <span id="spann">
+    Details about Treaty Two. All information  on this webpage is sourced from The
+    Government of the Anishinaabe Nation in Teaty 2 Territory.</span></a>
+    </main>
     <footer></footer>
   </body>
 </html>
