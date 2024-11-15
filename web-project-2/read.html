@@ -20,26 +20,56 @@ Monday, October 21 2024 -->
         background-image: none;
         background-color:#FFCC80; /* Background color */
         margin-bottom: 130px;
+        margin-right:10px ;
+        margin-left: 10px;
       }
-      h1{
-        color:#ff8d4d;
-        font-size:60px;
+      
+      
+      @font-face {
+        font-family:cherry;
+        src: url(Cherry_Swash/CherrySwash-Regular.ttf);
+      }
+      @font-face{
+        font-family:cherrybold;
+        src: url(Cherry_Swash/CherrySwash-Bold.ttf);
 
       }
+      
+      h1 {
+      position: relative;
+      font-family:cherrybold;
+      font-size: 65px;
+      color: #FF8D4D;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: linear-gradient(45deg, #e67171, #fcb232, #fc9eba);
+  transition: width 0.3s ease-in-out;
+}
+
+h1:hover::after {
+  width: 100%;
+}
       /* Positioning and styling for the first image */
       #info {
         color:#333333;
         font-size:20px ;
-        font-family:
+        font-family:cherry;
         text-align: left;
       
       }
 
       /* Positioning and styling for the second image */
       #treat {
-        color:#333333
+        color:#333333;
         font-size:20px ;
-        font-family:cursive;
+        font-family:cherry;
         text-align: center;
         
       }
@@ -52,7 +82,7 @@ Monday, October 21 2024 -->
                 right: 30px;
                 font-size: x-small;
       }
-       /*color for the first span*/
+      /*color for the first span*/
       #spann
       {
         color: rgb(14, 121, 121);
@@ -66,7 +96,7 @@ Monday, October 21 2024 -->
       .container {
     display: flex;        /* Enable flexbox layout */
     height: auto;
-    margin-top:300px ;
+    margin-top:240px ;
     width: auto;
     flex-direction: row;
 
@@ -74,12 +104,20 @@ Monday, October 21 2024 -->
 
 #box1 {
 
-  width: 50%;
+  width: 45%;
 
 }
 #box2 {
-  width: 50%;
+  width: 45%;
   
+}
+img{
+  width:600px;
+  height: 300px;
+  position: absolute;
+  top: 170px;
+  right: -100px;
+
 }
 
     </style>
@@ -102,15 +140,16 @@ Monday, October 21 2024 -->
 
     <!-- Main section of the page containing primary content -->
     <main>
+      <img src="images/bingo.jpg" alt="Picture of the character bingo ">
       <!-- First section: Information about treaties -->
       <div class="container">
         <div id="box1">
           <section>
             <h1>What are treaties?</h1>
-      <p id="info">A treaty is a special agreement between groups of people or countries.</br> 
-        These agreements help them get along better by deciding who gets to use certain land or resources.</br>
-        Everyone has to follow the rules they agree on in the treaty.<br/>
-      It's like when you and your friends agree to play a game a certain way to keep it fun and fair for everyone!
+      <p id="info">A treaty is a special agreement between groups of people or countries.</br>
+        These agreements help them get along better by deciding who gets to use certain land or resources.
+        Everyone has to follow the rules they agree on in the treaty.
+      It's like when you and your friends agree to</b>br play a game a certain way to keep it fun and fair for everyone!
       </p>
           </section>
     </div>
@@ -118,7 +157,7 @@ Monday, October 21 2024 -->
       <!-- Second section: Information about Treaty Two -->
       <div id="box2">
         <section>
-
+          <h1>What is treaty 2?</h1>
         <p id="treat">
           This treaty was signed on august 21, 1871. The agreement was made between the  Anishinaabe people and the queen’s assistants.
           It was signed at the Manitoba house.
