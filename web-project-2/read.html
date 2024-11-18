@@ -1,9 +1,3 @@
-<!--Tomisin Odugbesan
-software devlopment
-Mrs.Hointink
-Pembina Trails Collegiate
-Monday, October 21 2024 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,108 +12,158 @@ Monday, October 21 2024 -->
       /* Styling for the body */
       body {
         background-image: none;
-        background-color:#FFCC80; /* Background color */
-        margin-bottom: 130px;
-        margin-right:10px ;
+        background-color: #ffcc80; /* Background color */
+        margin-bottom: 230px;
         margin-left: 10px;
+        margin-right: 10px;
       }
-      
-      
+
       @font-face {
-        font-family:cherry;
+        font-family: cherry;
         src: url(Cherry_Swash/CherrySwash-Regular.ttf);
       }
-      @font-face{
-        font-family:cherrybold;
+
+      @font-face {
+        font-family: cherrybold;
         src: url(Cherry_Swash/CherrySwash-Bold.ttf);
-
       }
-      
+
       h1 {
-      position: relative;
-      font-family:cherrybold;
-      font-size: 65px;
-      color: #FF8D4D;
-}
+        position: relative;
+        font-family: cherrybold;
+        font-size: 42px;
+        color: #ff8d4d;
+      }
 
-h1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 5px;
-  background: linear-gradient(45deg, #e67171, #fcb232, #fc9eba);
-  transition: width 0.3s ease-in-out;
-}
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background: linear-gradient(45deg, #e67171, #fcb232, #fc9eba);
+        transition: width 0.3s ease-in-out;
+      }
 
-h1:hover::after {
-  width: 100%;
-}
+      h1:hover::after {
+        width: 100%;
+      }
+
       /* Positioning and styling for the first image */
       #info {
-        color:#333333;
-        font-size:20px ;
-        font-family:cherry;
+        color: #333333;
+        font-size: 16px;
+        font-family: cherry;
         text-align: left;
-      
       }
 
       /* Positioning and styling for the second image */
       #treat {
-        color:#333333;
-        font-size:20px ;
-        font-family:cherry;
+        color: #333333;
+        font-size: 16px;
+        font-family: cherry;
         text-align: center;
-        
       }
-      
-       /*style for the source */
-      #source
-      {
-        position: absolute;
-        bottom: auto;
-                right: 30px;
-                font-size: x-small;
+
+      /* Style for the source links */
+      #source {
+        position: relative;
+        bottom: -20px;
+        right:-670px;
+        font-size: 10px;
       }
-      /*color for the first span*/
-      #spann
-      {
+
+      #source2 {
+        position: relative;
+        bottom: -40px;
+        right: -360px;
+        font-size: 10px;
+      }
+
+      /* Color for the first span */
+      #spann {
         color: rgb(14, 121, 121);
       }
-      /*style for the navigation links to the different pages */
+
+      /* Style for the navigation links to the different pages */
       .navbar {
-          position:absolute;
-         top:20px;
-         left:100px ;
+        position: absolute;
+        top: 20px;
+        left: 100px;
       }
+
       .container {
-    display: flex;        /* Enable flexbox layout */
-    height: auto;
-    margin-top:240px ;
-    width: auto;
-    flex-direction: row;
+        display: flex; /* Enable flexbox layout */
+        height: auto;
+        margin-top: 240px;
+        width: auto;
+        flex-direction: row;
+      }
 
-}
+      #box1 {
+        width: 45%;
+      }
 
-#box1 {
+      #box2 {
+        width: 45%;
+      }
 
-  width: 45%;
+      img {
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 20px;
+        right: 5px;
+      }
 
-}
-#box2 {
-  width: 45%;
-  
-}
-img{
-  width:600px;
-  height: 300px;
-  position: absolute;
-  top: 170px;
-  right: -100px;
+      #img2 {
+        width: 130px;
+        height: 100px;
+        position: absolute;
+        top: 722px;
+        left: 360px;
+      }
 
-}
+      #notepad-container {
+        margin: 30px auto;
+        text-align: center;
+      }
 
+      #notepad {
+        width: 35%;
+        height: 300px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+        position: absolute;
+        top: 820px;
+        left: 40px;
+        background-color: #fff176; /* This changes the text box's background color */
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: -550px;
+        margin-right: 300px;
+        margin-bottom: -970px;
+        margin-top: 5px;
+        background-color: #fff8e1;
+      }
+
+      button:hover {
+        background-color: #ff8d4d;
+      }
+      footer{
+        margin-bottom:-220px;
+        margin-top: 50px;
+      }
     </style>
   </head>
 
@@ -127,65 +171,163 @@ img{
     <!-- Header tag to wrap the navigation bar -->
     <header>
       <!-- Semantic navigation tag for navigation links -->
-            <!-- Navigation bar -->
-            <nav>
-              <div class="navbar">
-                <a href="treaty.html">Home</a>
-                <a href="read.html">Read</a>
-                <a href="images.html">Images</a>
-                <a href="sign.html">Sign Up</a>
-              </div>
-            </nav>
+      <!-- Navigation bar -->
+      <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="read.html">Read</a>
+          <a href="images.html">Images</a>
+        </div>
+      </nav>
     </header>
 
     <!-- Main section of the page containing primary content -->
     <main>
-      <img src="images/bingo.jpg" alt="Picture of the character bingo ">
+      <img
+        src="images/bshock.gif"
+        alt="Picture of the character Bluey and Bingo"
+        title="Picture of the character Bluey and Bingo" />
+
       <!-- First section: Information about treaties -->
       <div class="container">
         <div id="box1">
           <section>
             <h1>What are treaties?</h1>
-      <p id="info">A treaty is a special agreement between groups of people or countries.</br>
-        These agreements help them get along better by deciding who gets to use certain land or resources.
-        Everyone has to follow the rules they agree on in the treaty.
-      It's like when you and your friends agree to</b>br play a game a certain way to keep it fun and fair for everyone!
-      </p>
+            <p id="info">
+              A treaty is a special agreement between groups of people or
+              countries. These agreements help them get along better by deciding
+              who gets to use certain land or resources. Everyone has to follow
+              the rules they agree on in the treaty. It's like when you and your
+              friends agree to play a game a certain way to keep it fun and fair
+              for everyone!
+            </p>
           </section>
-    </div>
 
-      <!-- Second section: Information about Treaty Two -->
-      <div id="box2">
-        <section>
-          <h1>What is treaty 2?</h1>
-        <p id="treat">
-          This treaty was signed on august 21, 1871. The agreement was made between the  Anishinaabe people and the queen’s assistants.
-          It was signed at the Manitoba house.
-          In this treaty, both the Queen's helpers and the Anishinaabe agreed on how they would share and use the land.</br> 
-        The land was in southwestern Manitoba and a little bit in southeastern Saskatchewan.
-        This treaty is so important because it helped the Anishinaabe people to keep their rights
-        and continue using their land as they were before the people from Europe came to their land.
-         It also made it possible for new settlers to move into the land peacefully.</br>
+          <section>
+            <h1>Is this treaty used today?</h1>
+            <p id="info">
+              Now, the treaty helps the Anishinaabe people by allowing them to
+              build schools for kids to learn in their communities. Supporting
+              their jobs, institutions, and local businesses on reserves. Helps
+              protect their land and let the people hunt and fish. Allowing them
+              to make their own rules and decisions about their land.
+            </p>
+          </section>
+        </div>
 
-      The treaty was made because the government wanted to allow settlers to 
-    move in but they also wanted them to make peace with the owners of the land.   
-      They agreed to share and respect each other’s space, like when friends
-        make a promise to share toys and play nicely together.</br>
-   Some things that were promised in the beginning weren’t written down, so a few years later,
- they added more promises to make sure everything was fair for everyone involved.
-This treaty, like other treaties, helped people live together peacefully on the
- same land by making sure everyone knew the rules and respected each other’s rights.
- </p>
- </section>
-</div>
- </div>
- <a id="source"href="https://treaty2.ca/treaty-2/#:~:text=The%20treaty
-    %20reaffirmed%20the%20inherent,small%20part%20of
-    %20southeastern%20Saskatchewan."target="_blank">   
-    <span id="spann">
-    Details about Treaty Two. All information  on this webpage is sourced from The
-    Government of the Anishinaabe Nation in Teaty 2 Territory.</span></a>
+        <!-- Second section: Information about Treaty Two -->
+        <div id="box2">
+          <section>
+            <h1>What is Treaty 2?</h1>
+            <p id="treat">
+              This treaty was signed on August 21, 1871. The agreement was made
+              between the Anishinaabe people and the Queen’s assistants. It was
+              signed at the Manitoba House. The Anishinaabe are a collective of
+              three distinct peoples: the Ojibwe, the Odawa, and the Potawatomi.
+              They originated on the northeast coast of what is now Canada and
+              the United States. In this treaty, both the Queen's helpers and
+              the Anishinaabe people agreed on how they would share and use the
+              land. The land was in southwestern Manitoba and a little bit in
+              southeastern Saskatchewan. Treaty 2 is different from other
+              treaties because it promised schools, tools, and animals for
+              farming while keeping hunting and fishing rights. This treaty is
+              so important because it helped the Anishinaabe people to keep some
+              of their rights and continue using their land as they were before
+              the people from Europe came to their land. It also made it
+              possible for new settlers to move into the land peacefully. The
+              treaty was made because the government wanted to allow settlers to
+              move in, but they also wanted them to make peace with the owners
+              of the land. They agreed to share and respect each other’s space,
+              like when friends make a promise to share toys and play nicely
+              together. Some things that were promised in the beginning weren’t
+              written down, so a few years later, they added more promises.
+            </p>
+          </section>
+
+          <section>
+            <h1>What was in the treaty?</h1>
+            <p id="treat">
+              The Anishinaabe people were promised small pieces of land for
+              their families. A family of five would get 160 acres. They were
+              told they could still hunt and fish on the lands they gave up.
+              Each person was promised $3.00 every year, which was later raised
+              to $5.00. Even though it wasn’t written in the treaty, they were
+              promised farming tools, animals like cows and pigs, and even
+              wagons to help them start farming. Schools would be built on the
+              reserves to help with education. It was agreed that alcohol
+              wouldn’t be allowed on the reserves.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <img
+        id="img2"
+        src="images/blue.png"
+        alt="Picture of the character Bluey"
+        title="Picture of the character Bluey" />
+
+      <!-- Source links with more details about Treaty Two -->
+      <a
+        id="source"
+        href="https://treaty2.ca/treaty-2/#:~:text=The%20treaty%20reaffirmed%20the%20inherent,small%20part%20of%20southeastern%20Saskatchewan."
+        target="_blank">
+        <span id="spann"
+          >Details about Treaty Two. All information about Treaty 2 is sourced</br>
+          from The Government of the Anishinaabe Nation in Treaty 2
+          Territory.</span
+        >
+      </a>
+
+      <a
+        id="source2"
+        href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2"
+        target="_blank">
+        <span id="spann"
+          >Details about Treaty Two: What were included in Treaty Two</span
+        >
+      </a>
+
+      <!-- Notepad for user input -->
+      <div id="notepad-container">
+        <textarea
+          id="notepad"
+          placeholder="Write some notes here..."></textarea>
+        <button id="save-button">Save Notes</button>
+        <button id="clear-button">Clear Notes</button>
+      </div>
+
+      <script>
+        // Save notes to localStorage
+        document
+          .getElementById("save-button")
+          .addEventListener("click", function () {
+            const notes = document.getElementById("notepad").value;
+            localStorage.setItem("notes", notes);
+            alert("Notes saved!");
+          });
+
+        // Load notes from localStorage
+        window.addEventListener("load", function () {
+          const savedNotes = localStorage.getItem("notes");
+          if (savedNotes) {
+            document.getElementById("notepad").value = savedNotes;
+          }
+        });
+
+        // Clear notes
+        document
+          .getElementById("clear-button")
+          .addEventListener("click", function () {
+            document.getElementById("notepad").value = "";
+            localStorage.removeItem("notes");
+            alert("Notes cleared!");
+          });
+      </script>
     </main>
-    <footer></footer>
+
+    <footer>
+      <p>&copy; 2024 treaty 2 education. All rights reserved</p>
+    </footer>
   </body>
 </html>

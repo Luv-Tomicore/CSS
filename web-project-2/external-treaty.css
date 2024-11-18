@@ -1,3 +1,11 @@
+/*In this webproject, I used a monochromatic color family.
+I chose the colors, particularly because I consider them bright, fun and childish colors.
+For example, nickolodeon uses this color as well to make thier content seems playful and childlike.
+These colors help present the information in a way that does not feel boring or sad to kids.
+Although this topic is not exactly a joyful part of history, due to the injustice,
+these colors can make it seem pure and not so scary for the kids.
+I also thought of the color orange when I thought about the indigenous children. 
+Pertaining to orange shirt day, kids can associate this color with their indigenous studies and can understand the concept. */
 /* Set the opacity for the element with ID 'opa' */
 #opa {
   opacity: 0.5; /* Makes the element semi-transparent */
@@ -6,15 +14,8 @@
 /* Styles for the body of the page */
 body {
   background-image: url("images/bland.gif"); /* Sets a background image */
+  word-spacing: 5px;
 }
-
-/* Styles for the h2 headings */
-h2 {
-  font-family: cursive; /* Sets the font family to cursive */
-  color: #333333; /* Sets the text color */
-  font-size: 20px; /* Sets the font size */
-}
-
 /* Styles for the navigation bar */
 .navbar {
   display: flex; /* Uses flexbox for layout */
@@ -24,7 +25,7 @@ h2 {
 
 /* Styles for individual navigation links */
 .navbar a {
-  background-color:#FFF176; /* Sets the background color of the links */
+  background-color: #fff176; /* Sets the background color of the links */
   color: #333333; /* Sets the text color to white */
   padding: 20px; /* Adds padding inside the links */
   border: 5px solid #ffb84d; /* Adds a dotted border with a specified color */
@@ -43,6 +44,13 @@ h2 {
 
 /* Styles for the hover state of the links */
 .navbar a:hover {
-  background-color:#FFF8E1; /* Changes background color on hover */
+  background-color: #fff8e1; /* Changes background color on hover */
   transform: scale(1.1); /* Slightly enlarges the bubble on hover */
+}
+/*styling  for footer*/
+footer {
+  background-color: #fff176;
+  color: #333333;
+  text-align: center;
+  padding: 10px;
 }
